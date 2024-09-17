@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geostar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="gameOver" class="game-over hidden">
+    <h1 class="gameover-header">Game Over</h1>
+    <button id="playAgain" class="play-again button2">Play Again</button>
+  </div>
+  <div class="wrapper">
+    <h1 id="header" class="main-header">Memory Game</h1>
+    <div class="container">
+      <div data-buttons id="0" class="button"></div>
+      <div data-buttons id="1" class="button"></div>
+      <div data-buttons id="2" class="button"></div>
+      <div data-buttons id="3" class="button"></div>
+      <div data-buttons id="4" class="button"></div>
+      <div data-buttons id="5" class="button"></div>
+      <div data-buttons id="6" class="button"></div>
+      <div data-buttons id="7" class="button"></div>
+      <div data-buttons id="8" class="button"></div>
+    </div>
+    <div class="container2">
+      <button id="start" class="button2">Start</button>
+      <h2 id="points" class="points displayNone">0 points</h2>
+    </div>
+  </div>
+</body>
+</html>

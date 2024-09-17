@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Geostar', cursive;
+  user-select: none;
+}
+
+body {
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background-color .6s;
+}
+
+.game-over {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .9);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity .2s;
+}
+
+.gameover-header {
+  font-size: 4.267rem;
+  color: white;
+  text-align: center;
+}
+
+.button2.play-again {
+  color: white;
+  border: 3px solid white;
+}
+
+.button2.play-again:hover {
+  background-color: white;
+  color: black;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.667em;
+  width: 100%;
+  max-width: 400px;
+  margin: 100px 24px 100px 24px;
+}
+
+.main-header {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  transition: .6s;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 0.333em;
+}
+
+.button {
+  aspect-ratio: 1/1;
+  border: 3px solid black;
+  background-color: rgba(255, 255, 255, 1);;
+  transition: background-color .2s;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  height: 4em;
+}
+
+.button2 {
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  padding: 0.333em 1em;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: black;
+  color: white;
+}
+
+.points {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* ====================================== */
+/* To add/remove */
+.dark {
+  background-color: rgb(88, 88, 88);
+}
+
+.hover-active:hover {
+  background-color: rgba(255, 255, 0, .1);
+  cursor: pointer;
+}
+
+.hover-active:active {
+  background-color: rgb(151, 151, 0);
+}
+
+.active {
+  background-color: rgb(151, 151, 0);
+  transition: background-color .2s;
+}
+
+.active-red {
+  background-color: rgb(151, 0, 0);
+  transition: background-color .2s;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.displayNone {
+  display: none;
+}
